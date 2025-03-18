@@ -466,7 +466,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8d0238e673ea774588c8731c585df25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 8
+  turnRadius: 5
+  angularSpeed: 90
+  facilityTargetPosition: {fileID: 0}
+  roadTargetPosition: {fileID: 0}
+  currentState: 0
+  isNeedRepair: 1
 --- !u!65 &3561108615818770063
 BoxCollider:
   m_ObjectHideFlags: 0

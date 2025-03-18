@@ -6,7 +6,7 @@ namespace Cars
 {
     public class CarMovement : MonoBehaviour
     {
-        [SerializeField] private float speed = 6.5f;
+        [SerializeField] private float speed = 8f;
         [SerializeField] private float turnRadius = 5f;
         [SerializeField] private float angularSpeed = 90f;
 
@@ -41,7 +41,10 @@ namespace Cars
                     break;
                 case CarState.InsideFacility:
                     MoveTowards(facilityTargetPosition.position,
-                        () => { StartWaiting(() => currentState = CarState.ReversingOut); });
+                        () => currentState = CarState.Idle);
+                    break;
+                case CarState.Idle:
+                    //WaitForRepair(() => currentState = CarState.ReversingOut);
                     break;
                 case CarState.ReversingOut:
                     MoveTowards(roadTargetPosition.position,
@@ -90,7 +93,6 @@ namespace Cars
         {
             Vector3 toTarget = targetPosition.position - transform.position;
 
-            // If returning, calculate based on "backwards" perspective (flip forward vector)
             Vector3 referenceForward = isReturning ? -transform.forward : transform.forward;
             Vector3 referenceRight = isReturning ? -transform.right : transform.right;
 
@@ -109,8 +111,8 @@ namespace Cars
             SetupTurn(facilityTargetPosition);
             currentState = CarState.Turning;
         }
-
-        private void StartWaiting(Action onComplete)
+        
+        private void WaitForRepair(Action onComplete)
         {
             _waitTimer = new Timer(5f, onComplete);
             _waitTimer.isActive = true;

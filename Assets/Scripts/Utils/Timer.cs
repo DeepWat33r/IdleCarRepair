@@ -21,7 +21,7 @@ namespace Utils
             if (!isActive) return;
             
             elapsedTime += Time.deltaTime;
-            Debug.Log("Elapsed time: " + elapsedTime);
+            //Debug.Log("Elapsed time: " + elapsedTime);
             if (elapsedTime >= duration)
             {
                 Reset();

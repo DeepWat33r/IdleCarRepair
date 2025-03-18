@@ -9,5 +9,6 @@ namespace Cars
         InsideFacility,
         ReversingOut,
         TurningBackToRoad,
+        Idle,
     }
 }
