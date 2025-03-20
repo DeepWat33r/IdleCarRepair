@@ -78,5 +78,28 @@ namespace Core
             OnExperienceChanged?.Invoke(experience);
             OnLevelChanged?.Invoke(level);
         }
+
+        #region Save/Load
+        public void Save( ref PlayerProgressionData data)
+        {
+            data.level = level;
+            data.experience = experience;
+            data.money = money;
+        }
+        public void Load(PlayerProgressionData data)
+        {
+            level = Mathf.Clamp(data.level, 1, maxLevel);
+            experience = data.experience;
+            money = data.money;
+        }
+        #endregion
+    }
+    
+    [Serializable]
+    public struct PlayerProgressionData
+    {
+        public int level;
+        public int experience;
+        public int money;
     }
 }

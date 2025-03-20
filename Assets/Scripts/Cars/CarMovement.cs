@@ -112,10 +112,10 @@ namespace Cars
             currentState = CarState.Turning;
         }
         
-        private void WaitForRepair(Action onComplete)
-        {
-            _waitTimer = new Timer(5f, onComplete);
-            _waitTimer.isActive = true;
-        }
+        // private void WaitForRepair(Action onComplete)
+        // {
+        //     _waitTimer = new Timer(5f, onComplete);
+        //     _waitTimer.isActive = true;
+        // }
     }
 }
