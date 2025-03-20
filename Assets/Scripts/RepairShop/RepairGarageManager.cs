@@ -9,7 +9,7 @@ namespace RepairShop
     {
         public bool isAvailable = true;
         private CarMovement _carMovement;
-
+        
         private PlayerProgression _playerProgression;
         public void Start()
         {

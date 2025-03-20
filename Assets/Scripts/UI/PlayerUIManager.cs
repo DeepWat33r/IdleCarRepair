@@ -2,6 +2,7 @@ using System;
 using Core;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 namespace UI
@@ -11,6 +12,7 @@ namespace UI
         [SerializeField] private TMP_Text moneyText;
         [SerializeField] private TMP_Text levelText;
         [SerializeField] private Slider expSlider;
+        [SerializeField] private int mainMenuSceneIndex = 0;
 
         private PlayerProgression _playerProgression;
         public void Awake()
@@ -70,6 +72,11 @@ namespace UI
             UpdateMoneyUI(_playerProgression.Money);
             UpdateLevelUI(_playerProgression.Level);
             UpdateExpUI(_playerProgression.Experience);
+        }
+
+        public void ReturnToMainMenu()
+        {
+            SceneManager.LoadSceneAsync(mainMenuSceneIndex);
         }
     }
 }
