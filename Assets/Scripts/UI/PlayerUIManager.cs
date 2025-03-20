@@ -11,7 +11,13 @@ namespace UI
         [SerializeField] private TMP_Text moneyText;
         [SerializeField] private TMP_Text levelText;
         [SerializeField] private Slider expSlider;
-        
+
+        private PlayerProgression _playerProgression;
+        public void Awake()
+        {
+            _playerProgression = GameManager.Instance.PlayerProgression;
+        }
+
         private void OnEnable()
         {
             PlayerProgression.OnMoneyChanged += UpdateMoneyUI;
@@ -46,25 +52,24 @@ namespace UI
 
         private void UpdateExpSlider()
         {
-            var player = PlayerProgression.Instance;
-
-            int nextLevel = Mathf.Clamp(player.Level, 1,  player.Level);
-            int maxExpForThisLevel = player.Level >= player.MaxLevel ? 1 : player.GetExpRequirementForLevel(player.Level);
+            
+            int nextLevel = Mathf.Clamp(_playerProgression.Level, 1,  _playerProgression.Level);
+            int maxExpForThisLevel = _playerProgression.Level >= _playerProgression.MaxLevel ? 1 : _playerProgression.GetExpRequirementForLevel(_playerProgression.Level);
 
             expSlider.maxValue = maxExpForThisLevel;
-            expSlider.value = player.Experience;
+            expSlider.value = _playerProgression.Experience;
         }
 
         private void SyncAll()
         {
-            if (PlayerProgression.Instance == null)
+            if (_playerProgression == null)
             {
                 Debug.LogWarning("PlayerProgression.Instance is not ready yet.");
                 return;
             }
-            UpdateMoneyUI(PlayerProgression.Instance.Money);
-            UpdateLevelUI(PlayerProgression.Instance.Level);
-            UpdateExpUI(PlayerProgression.Instance.Experience);
+            UpdateMoneyUI(_playerProgression.Money);
+            UpdateLevelUI(_playerProgression.Level);
+            UpdateExpUI(_playerProgression.Experience);
         }
     }
 }

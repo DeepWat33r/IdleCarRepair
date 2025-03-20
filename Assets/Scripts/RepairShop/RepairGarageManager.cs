@@ -13,7 +13,7 @@ namespace RepairShop
         private PlayerProgression _playerProgression;
         public void Start()
         {
-            _playerProgression = PlayerProgression.Instance;
+            _playerProgression = GameManager.Instance.PlayerProgression;
         }
 
         public void GetCarMovement(CarMovement carMovement)

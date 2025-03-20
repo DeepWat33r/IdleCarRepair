@@ -5,7 +5,7 @@ namespace Core
 {
     public class PlayerProgression : MonoBehaviour
     {
-        public static PlayerProgression Instance { get; private set; }
+        //public static PlayerProgression Instance { get; set; }
 
         [Header("Player Data")]
         [SerializeField] private int level = 1;
@@ -26,13 +26,7 @@ namespace Core
 
         private void Awake()
         {
-            if (Instance != null)
-            {
-                Destroy(gameObject);
-                return;
-            }
-            Instance = this;
-            DontDestroyOnLoad(gameObject);
+            GameManager.Instance.PlayerProgression = this;
         }
 
         public void AddMoney(int amount)
