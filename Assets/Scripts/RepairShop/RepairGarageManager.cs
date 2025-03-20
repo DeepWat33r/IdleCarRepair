@@ -27,6 +27,7 @@ namespace RepairShop
             _carMovement.currentState = CarState.ReversingOut;
             _playerProgression.AddMoney(100);
             _playerProgression.AddExperience(50);
+            SaveSystem.SaveSystem.Save();
         }
     }
 }

@@ -68,17 +68,6 @@ namespace Core
 
         public int MaxLevel => maxLevel;
         
-        public void LoadPlayerData(int loadedLevel, int loadedExp, int loadedMoney)
-        {
-            level = Mathf.Clamp(loadedLevel, 1, maxLevel);
-            experience = loadedExp;
-            money = loadedMoney;
-
-            OnMoneyChanged?.Invoke(money);
-            OnExperienceChanged?.Invoke(experience);
-            OnLevelChanged?.Invoke(level);
-        }
-
         #region Save/Load
         public void Save( ref PlayerProgressionData data)
         {
@@ -91,6 +80,10 @@ namespace Core
             level = Mathf.Clamp(data.level, 1, maxLevel);
             experience = data.experience;
             money = data.money;
+            
+            OnMoneyChanged?.Invoke(money);
+            OnExperienceChanged?.Invoke(experience);
+            OnLevelChanged?.Invoke(level);
         }
         #endregion
     }
