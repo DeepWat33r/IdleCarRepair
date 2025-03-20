@@ -1,5 +1,6 @@
 using System;
 using Cars;
+using Core;
 using UnityEngine;
 
 namespace RepairShop
@@ -8,10 +9,11 @@ namespace RepairShop
     {
         public bool isAvailable = true;
         private CarMovement _carMovement;
-        
-        public void Update()
-        {
 
+        private PlayerProgression _playerProgression;
+        public void Start()
+        {
+            _playerProgression = PlayerProgression.Instance;
         }
 
         public void GetCarMovement(CarMovement carMovement)
@@ -23,6 +25,8 @@ namespace RepairShop
         {
             isAvailable = true;
             _carMovement.currentState = CarState.ReversingOut;
+            _playerProgression.AddMoney(100);
+            _playerProgression.AddExperience(50);
         }
     }
 }
