@@ -41,9 +41,9 @@ namespace UI
             moneyText.text = $"{amount}";
         }
 
-        private void UpdateLevelUI(int level)
+        private void UpdateLevelUI()
         {
-            levelText.text = $"{level}";
+            levelText.text = $"{GameManager.Instance.PlayerProgression.Level}";
             UpdateExpSlider();
         }
 
@@ -70,7 +70,7 @@ namespace UI
                 return;
             }
             UpdateMoneyUI(_playerProgression.Money);
-            UpdateLevelUI(_playerProgression.Level);
+            UpdateLevelUI();
             UpdateExpUI(_playerProgression.Experience);
         }
 

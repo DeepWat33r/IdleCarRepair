@@ -10,6 +10,7 @@ namespace Core
         public int ActiveSaveSlot { get; private set; } = -1;
 
         public PlayerProgression PlayerProgression { get; set; }
+        public PlayerUnlocks PlayerUnlocks { get; set; }
         private void Awake()
         {
             if (Instance != null)

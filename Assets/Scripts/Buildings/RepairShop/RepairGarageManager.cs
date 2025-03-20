@@ -1,9 +1,8 @@
-using System;
 using Cars;
 using Core;
 using UnityEngine;
 
-namespace RepairShop
+namespace Buildings.RepairShop
 {
     public class RepairGarageManager : MonoBehaviour
     {

@@ -1,5 +1,5 @@
 using System;
-using RepairShop;
+using Buildings.RepairShop;
 using UnityEngine;
 using UnityEngine.UI;
 

@@ -5,8 +5,6 @@ namespace Core
 {
     public class PlayerProgression : MonoBehaviour
     {
-        //public static PlayerProgression Instance { get; set; }
-
         [Header("Player Data")]
         [SerializeField] private int level = 1;
         [SerializeField] private int experience = 0;
@@ -22,7 +20,7 @@ namespace Core
 
         public static event Action<int> OnMoneyChanged;
         public static event Action<int> OnExperienceChanged;
-        public static event Action<int> OnLevelChanged;
+        public static event Action OnLevelChanged;
 
         private void Awake()
         {
@@ -57,7 +55,7 @@ namespace Core
             {
                 experience -= expPerLevel[level];
                 level++;
-                OnLevelChanged?.Invoke(level);
+                OnLevelChanged?.Invoke();
             }
         }
         
@@ -83,7 +81,7 @@ namespace Core
             
             OnMoneyChanged?.Invoke(money);
             OnExperienceChanged?.Invoke(experience);
-            OnLevelChanged?.Invoke(level);
+            OnLevelChanged?.Invoke();
         }
         #endregion
     }
