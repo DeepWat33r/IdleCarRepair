@@ -9,6 +9,7 @@ namespace Businesses.GasStation
     public class GasStationManager : MonoBehaviour
     {
         public bool isAvailable = true;
+        public int profitFromRefuel = 50;
         public float timeToRefuel = 10f;
         
         private CarMovement _carMovement;
@@ -49,7 +50,7 @@ namespace Businesses.GasStation
         {
             isAvailable = true;
             _carMovement.currentState = CarState.ReversingOut;
-            _playerProgression.AddMoney(50);
+            _playerProgression.AddMoney(profitFromRefuel);
             SaveSystem.SaveSystem.Save();
         }
         

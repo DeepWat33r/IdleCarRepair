@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65d93c259bcf20d43b40e308097ca668, type: 3}
+  m_Name: AirFilter
+  m_EditorClassIdentifier: 
+  itemName: AirFilter
+  cost: 25
+  exp: 20
+  profitPrice: 50
+  itemPrefab: {fileID: 7329438243136100034, guid: 22e4a25c074632140894dd0ff6352698, type: 3}

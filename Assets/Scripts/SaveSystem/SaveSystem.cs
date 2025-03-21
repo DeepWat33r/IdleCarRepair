@@ -2,6 +2,7 @@ using UnityEngine;
 using System.IO;
 using Businesses;
 using Core;
+using InventorySystem;
 
 namespace SaveSystem
 {
@@ -15,6 +16,7 @@ namespace SaveSystem
             public PlayerProgressionData playerProgressionSaveData;
             public PlayerUnlocksData playerUnlocksSaveData;
             public BuildingsData buildingsSaveData;
+            public InventoryData inventorySaveData;
         }
 
         public static string SaveFileName(int saveSlot)
@@ -35,6 +37,7 @@ namespace SaveSystem
             GameManager.Instance.PlayerProgression.Save(ref _saveData.playerProgressionSaveData);
             GameManager.Instance.PlayerUnlocks.Save(ref _saveData.playerUnlocksSaveData);
             GameManager.Instance.Buildings.Save(ref _saveData.buildingsSaveData);
+            GameManager.Instance.InventoryManager.Save(ref _saveData.inventorySaveData);
         }
 
         public static void Load()
@@ -50,6 +53,7 @@ namespace SaveSystem
             GameManager.Instance.PlayerProgression.Load(_saveData.playerProgressionSaveData);
             GameManager.Instance.PlayerUnlocks.Load(_saveData.playerUnlocksSaveData);
             GameManager.Instance.Buildings.Load(_saveData.buildingsSaveData);
+            GameManager.Instance.InventoryManager.Load(_saveData.inventorySaveData);
         }
         
         public static bool IsSaveExists(int saveSlot)

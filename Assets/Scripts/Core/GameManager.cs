@@ -1,5 +1,6 @@
 using System;
 using Businesses;
+using InventorySystem;
 using UnityEngine;
 
 namespace Core
@@ -13,6 +14,7 @@ namespace Core
         public PlayerProgression PlayerProgression { get; set; }
         public PlayerUnlocks PlayerUnlocks { get; set; }
         public Buildings Buildings { get; set; }
+        public InventoryManager InventoryManager { get; set; }
         private void Awake()
         {
             if (Instance != null)
