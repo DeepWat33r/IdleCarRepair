@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65d93c259bcf20d43b40e308097ca668, type: 3}
   m_Name: OilFilter
   m_EditorClassIdentifier: 
-  itemName: OilFilter
-  cost: 50
-  exp: 100
-  profitPrice: 100
-  itemPrefab: {fileID: 5173529108712517455, guid: af4cca597fd9e01469c457eb17525ac1, type: 3}
+  itemName: Wheel
+  cost: 100
+  exp: 40
+  profitPrice: 150
+  itemPrefab: {fileID: 8269118697001902058, guid: 11b512eff3afa2f4198cda8a34ebfa63, type: 3}

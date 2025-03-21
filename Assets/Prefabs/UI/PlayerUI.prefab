@@ -485,7 +485,7 @@ MonoBehaviour:
         m_MethodName: BuyItem
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: 681970e2ba5baad4696f3b8fdf78d9f0, type: 2}
+          m_ObjectArgument: {fileID: 11400000, guid: b6fe4dd7ff4197c4496448feacf5029c, type: 2}
           m_ObjectArgumentAssemblyTypeName: InventorySystem.Item, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -956,7 +956,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36220b80539fa2a459cf2eae2e95047e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item: {fileID: 11400000, guid: c2cb5f148005ee14298bf3d2d9e4eec5, type: 2}
+  item: {fileID: 11400000, guid: 12879e360381d864094734b028255b67, type: 2}
   quantityText: {fileID: 0}
   priceText: {fileID: 1958413529526430453}
 --- !u!1 &1454755969916786386
@@ -2117,7 +2117,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36220b80539fa2a459cf2eae2e95047e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item: {fileID: 11400000, guid: 753b310a4803781489ba06a56bf8ea6a, type: 2}
+  item: {fileID: 11400000, guid: 3345c237a0f47264e9914ebe4e9f693c, type: 2}
   quantityText: {fileID: 7857756724443350698}
   priceText: {fileID: 0}
 --- !u!1 &2388191871852966287
@@ -2515,7 +2515,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36220b80539fa2a459cf2eae2e95047e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item: {fileID: 11400000, guid: 681970e2ba5baad4696f3b8fdf78d9f0, type: 2}
+  item: {fileID: 11400000, guid: b6fe4dd7ff4197c4496448feacf5029c, type: 2}
   quantityText: {fileID: 4504209225373107565}
   priceText: {fileID: 0}
 --- !u!1 &2988787509759702137
@@ -2870,7 +2870,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36220b80539fa2a459cf2eae2e95047e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item: {fileID: 11400000, guid: c2cb5f148005ee14298bf3d2d9e4eec5, type: 2}
+  item: {fileID: 11400000, guid: 12879e360381d864094734b028255b67, type: 2}
   quantityText: {fileID: 8253737048293785499}
   priceText: {fileID: 0}
 --- !u!1 &3499031031227102084
@@ -3399,7 +3399,7 @@ MonoBehaviour:
         m_MethodName: BuyItem
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: c2cb5f148005ee14298bf3d2d9e4eec5, type: 2}
+          m_ObjectArgument: {fileID: 11400000, guid: 12879e360381d864094734b028255b67, type: 2}
           m_ObjectArgumentAssemblyTypeName: InventorySystem.Item, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -3702,7 +3702,7 @@ MonoBehaviour:
         m_MethodName: BuyItem
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: 753b310a4803781489ba06a56bf8ea6a, type: 2}
+          m_ObjectArgument: {fileID: 11400000, guid: 3345c237a0f47264e9914ebe4e9f693c, type: 2}
           m_ObjectArgumentAssemblyTypeName: InventorySystem.Item, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -6357,7 +6357,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36220b80539fa2a459cf2eae2e95047e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item: {fileID: 11400000, guid: 681970e2ba5baad4696f3b8fdf78d9f0, type: 2}
+  item: {fileID: 11400000, guid: b6fe4dd7ff4197c4496448feacf5029c, type: 2}
   quantityText: {fileID: 0}
   priceText: {fileID: 511482223705480564}
 --- !u!1 &8783366741637869692
@@ -6691,7 +6691,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36220b80539fa2a459cf2eae2e95047e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item: {fileID: 11400000, guid: 753b310a4803781489ba06a56bf8ea6a, type: 2}
+  item: {fileID: 11400000, guid: 3345c237a0f47264e9914ebe4e9f693c, type: 2}
   quantityText: {fileID: 0}
   priceText: {fileID: 8898641616762733285}
 --- !u!1 &9114458085424419209

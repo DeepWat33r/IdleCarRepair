@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65d93c259bcf20d43b40e308097ca668, type: 3}
   m_Name: Engine
   m_EditorClassIdentifier: 
-  itemName: Engine
+  itemName: Wheel
   cost: 500
-  exp: 200
-  profitPrice: 1200
-  itemPrefab: {fileID: 2458453966550102493, guid: 69d01eb289e603a4eace456b4995f23b, type: 3}
+  exp: 50
+  profitPrice: 700
+  itemPrefab: {fileID: 8269118697001902058, guid: 11b512eff3afa2f4198cda8a34ebfa63, type: 3}

@@ -1703,17 +1703,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: bef423c253d7f344a983b018bd6f6bd7, type: 3}
   m_PrefabInstance: {fileID: 255851358}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &257569961 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 703868121810090521, guid: 79508cae0612d4941b12575fe961ddba, type: 3}
-  m_PrefabInstance: {fileID: 4294339307827018413}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 91b807e442b55564d98bed165c1a2f7b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &259470655
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2507,17 +2496,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: cc564d90621b9c7418e3a8a07aab85fe, type: 3}
   m_PrefabInstance: {fileID: 356940396}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &390551158 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5443323217605275093, guid: 79508cae0612d4941b12575fe961ddba, type: 3}
-  m_PrefabInstance: {fileID: 4294339307827018413}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 91b807e442b55564d98bed165c1a2f7b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &390937432
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5340,7 +5318,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90709789969d55247bd57961b2746f68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelToUnlockGasStation: 2
+  levelToUnlockGasStation: 3
   levelToUnlockOilFilter: 2
   levelToUnlockEngine: 3
 --- !u!1001 &866293819
@@ -7647,8 +7625,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gasStation: {fileID: 1667722133}
   repairShop: {fileID: 1501952524}
-  gasStationCost: 2000
-  repairShopCost: 1500
+  gasStationCost: 10000
+  repairShopCost: 5000
   isGasStationBuilt: 0
   isRepairShopBuilt: 0
 --- !u!1 &1250352801
@@ -9130,17 +9108,12 @@ MonoBehaviour:
   inventoryItems:
   - item: {fileID: 11400000, guid: f73ad20d52d59a5419927c134d4a1cbd, type: 2}
     quantity: 0
-  - item: {fileID: 11400000, guid: c2cb5f148005ee14298bf3d2d9e4eec5, type: 2}
+  - item: {fileID: 11400000, guid: 12879e360381d864094734b028255b67, type: 2}
     quantity: 0
-  - item: {fileID: 11400000, guid: 681970e2ba5baad4696f3b8fdf78d9f0, type: 2}
+  - item: {fileID: 11400000, guid: 3345c237a0f47264e9914ebe4e9f693c, type: 2}
     quantity: 0
-  - item: {fileID: 11400000, guid: 753b310a4803781489ba06a56bf8ea6a, type: 2}
+  - item: {fileID: 11400000, guid: b6fe4dd7ff4197c4496448feacf5029c, type: 2}
     quantity: 0
-  allItems:
-  - {fileID: 11400000, guid: f73ad20d52d59a5419927c134d4a1cbd, type: 2}
-  - {fileID: 11400000, guid: c2cb5f148005ee14298bf3d2d9e4eec5, type: 2}
-  - {fileID: 11400000, guid: 681970e2ba5baad4696f3b8fdf78d9f0, type: 2}
-  - {fileID: 11400000, guid: 753b310a4803781489ba06a56bf8ea6a, type: 2}
 --- !u!4 &1477114008
 Transform:
   m_ObjectHideFlags: 0
@@ -14536,70 +14509,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 232928589381989591, guid: 79508cae0612d4941b12575fe961ddba, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 2.87
-      objectReference: {fileID: 0}
-    - target: {fileID: 232928589381989591, guid: 79508cae0612d4941b12575fe961ddba, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 7.72
-      objectReference: {fileID: 0}
-    - target: {fileID: 3345394587140565006, guid: 79508cae0612d4941b12575fe961ddba, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3345394587140565006, guid: 79508cae0612d4941b12575fe961ddba, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3345394587140565006, guid: 79508cae0612d4941b12575fe961ddba, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 390551158}
-    - target: {fileID: 3345394587140565006, guid: 79508cae0612d4941b12575fe961ddba, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3345394587140565006, guid: 79508cae0612d4941b12575fe961ddba, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: RepairEnded
-      objectReference: {fileID: 0}
-    - target: {fileID: 3345394587140565006, guid: 79508cae0612d4941b12575fe961ddba, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: RepairShop.RepairGarageManager, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 3345394587140565006, guid: 79508cae0612d4941b12575fe961ddba, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 5528422706534565678, guid: 79508cae0612d4941b12575fe961ddba, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5528422706534565678, guid: 79508cae0612d4941b12575fe961ddba, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5528422706534565678, guid: 79508cae0612d4941b12575fe961ddba, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 257569961}
-    - target: {fileID: 5528422706534565678, guid: 79508cae0612d4941b12575fe961ddba, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5528422706534565678, guid: 79508cae0612d4941b12575fe961ddba, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: RepairEnded
-      objectReference: {fileID: 0}
-    - target: {fileID: 5528422706534565678, guid: 79508cae0612d4941b12575fe961ddba, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: RepairShop.RepairGarageManager, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 5528422706534565678, guid: 79508cae0612d4941b12575fe961ddba, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
     - target: {fileID: 7133552589994083834, guid: 79508cae0612d4941b12575fe961ddba, type: 3}
       propertyPath: m_Name
       value: Building_Auto Service

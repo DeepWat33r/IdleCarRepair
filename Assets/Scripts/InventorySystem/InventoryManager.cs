@@ -45,11 +45,13 @@ namespace InventorySystem
 
         public void UseItem(Item item)
         {
+            Debug.Log("Using item: " + item.name);
             InventoryItem invItem = inventoryItems.Find(i => i.item == item);
             if (invItem != null && invItem.quantity > 0)
             {
                 invItem.quantity--;
                 GameManager.Instance.PlayerProgression.AddMoney(item.profitPrice);
+                GameManager.Instance.PlayerProgression.AddExperience(item.exp);
 
                 OnInventoryChanged?.Invoke();
             }

@@ -424,9 +424,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 400010}
-  - component: {fileID: -2937884232936924621}
   - component: {fileID: 7366678697319452981}
   - component: {fileID: 8754888504489776336}
+  - component: {fileID: -2937884232936924621}
+  - component: {fileID: 3803884779774269111}
   m_Layer: 0
   m_Name: Vehicle_Car_color01_separate
   m_TagString: Car
@@ -454,25 +455,6 @@ Transform:
   - {fileID: 400000}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &-2937884232936924621
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 100010}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f8d0238e673ea774588c8731c585df25, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 8
-  turnRadius: 5
-  angularSpeed: 90
-  facilityTargetPosition: {fileID: 0}
-  roadTargetPosition: {fileID: 0}
-  currentState: 0
-  isNeedRepair: 1
 --- !u!65 &7366678697319452981
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -521,3 +503,41 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &-2937884232936924621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8d0238e673ea774588c8731c585df25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 8
+  turnRadius: 5
+  angularSpeed: 90
+  facilityTargetPosition: {fileID: 0}
+  roadTargetPosition: {fileID: 0}
+  currentState: 0
+  isNeedRepair: 1
+  isNeedFuel: 1
+--- !u!114 &3803884779774269111
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7b1ffb54e06647449e2a522055b6e23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  requiredParts: []
+  allPossibleParts:
+  - {fileID: 11400000, guid: 12879e360381d864094734b028255b67, type: 2}
+  - {fileID: 11400000, guid: 3345c237a0f47264e9914ebe4e9f693c, type: 2}
+  - {fileID: 11400000, guid: b6fe4dd7ff4197c4496448feacf5029c, type: 2}
+  - {fileID: 11400000, guid: f73ad20d52d59a5419927c134d4a1cbd, type: 2}

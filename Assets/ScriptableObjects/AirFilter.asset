@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65d93c259bcf20d43b40e308097ca668, type: 3}
   m_Name: AirFilter
   m_EditorClassIdentifier: 
-  itemName: AirFilter
+  itemName: Wheel
   cost: 25
-  exp: 20
+  exp: 10
   profitPrice: 50
-  itemPrefab: {fileID: 7329438243136100034, guid: 22e4a25c074632140894dd0ff6352698, type: 3}
+  itemPrefab: {fileID: 8269118697001902058, guid: 11b512eff3afa2f4198cda8a34ebfa63, type: 3}

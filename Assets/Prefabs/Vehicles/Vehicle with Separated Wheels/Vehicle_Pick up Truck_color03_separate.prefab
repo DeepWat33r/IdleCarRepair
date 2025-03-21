@@ -427,6 +427,7 @@ GameObject:
   - component: {fileID: 717426299512116666}
   - component: {fileID: 173442177826222855}
   - component: {fileID: 6409889616206345063}
+  - component: {fileID: -3257013145277586066}
   m_Layer: 0
   m_Name: Vehicle_Pick up Truck_color03_separate
   m_TagString: Car
@@ -473,6 +474,7 @@ MonoBehaviour:
   roadTargetPosition: {fileID: 0}
   currentState: 0
   isNeedRepair: 1
+  isNeedFuel: 1
 --- !u!65 &173442177826222855
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -521,3 +523,21 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &-3257013145277586066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7b1ffb54e06647449e2a522055b6e23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  requiredParts: []
+  allPossibleParts:
+  - {fileID: 11400000, guid: 12879e360381d864094734b028255b67, type: 2}
+  - {fileID: 11400000, guid: 3345c237a0f47264e9914ebe4e9f693c, type: 2}
+  - {fileID: 11400000, guid: b6fe4dd7ff4197c4496448feacf5029c, type: 2}
+  - {fileID: 11400000, guid: f73ad20d52d59a5419927c134d4a1cbd, type: 2}
