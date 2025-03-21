@@ -1,4 +1,5 @@
 using System;
+using Businesses;
 using UnityEngine;
 
 namespace Core
@@ -11,6 +12,7 @@ namespace Core
 
         public PlayerProgression PlayerProgression { get; set; }
         public PlayerUnlocks PlayerUnlocks { get; set; }
+        public Buildings Buildings { get; set; }
         private void Awake()
         {
             if (Instance != null)
@@ -25,7 +27,12 @@ namespace Core
         public void SetActiveSaveSlot(int slotIndex)
         {
             ActiveSaveSlot = slotIndex;
+            Debug.Log("Save Slot Set: " + ActiveSaveSlot);
         }
-        
+
+        public void Update()
+        {
+            //Debug.Log(ActiveSaveSlot);
+        }
     }
 }

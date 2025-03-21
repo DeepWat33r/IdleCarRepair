@@ -1,3 +1,4 @@
+using Core;
 using TMPro;
 using UnityEngine;
 
@@ -29,12 +30,14 @@ namespace UI
                 }
             }
         }
-
         public void DeleteSave(int saveSlot)
         {
             SaveSystem.SaveSystem.DeleteSave(saveSlot);
             UpdateSaveSlotsUI();
         }
-        
+        public void SetActiveSaveSlot(int saveSlot)
+        {
+            GameManager.Instance.SetActiveSaveSlot(saveSlot);
+        }
     }
 }

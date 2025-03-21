@@ -40,5 +40,28 @@ namespace Core
                 OnEngineUnlocked?.Invoke();
             }
         }
+        #region Save/Load
+        public void Save( ref PlayerUnlocksData data)
+        {
+            data.gasStationUnlocked = GasStationUnlocked;
+            data.oilFilterUnlocked = OilFilterUnlocked;
+            data.engineUnlocked = EngineUnlocked;
+        }
+        public void Load(PlayerUnlocksData data)
+        {
+            GasStationUnlocked = data.gasStationUnlocked;
+            OilFilterUnlocked = data.oilFilterUnlocked;
+            EngineUnlocked = data.engineUnlocked;
+            
+            CheckForUnlocks();
+        }
+        #endregion
+    }
+    [Serializable]
+    public struct PlayerUnlocksData
+    {
+        public bool gasStationUnlocked;
+        public bool oilFilterUnlocked;
+        public bool engineUnlocked;
     }
 }

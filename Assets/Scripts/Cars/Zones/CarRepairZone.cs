@@ -1,5 +1,5 @@
 using System;
-using Buildings.RepairShop;
+using Businesses.RepairShop;
 using UnityEngine;
 
 namespace Cars.Zones

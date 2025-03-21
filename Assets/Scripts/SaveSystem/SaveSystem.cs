@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.IO;
+using Businesses;
 using Core;
 
 namespace SaveSystem
@@ -12,6 +13,8 @@ namespace SaveSystem
         public struct SaveData
         {
             public PlayerProgressionData playerProgressionSaveData;
+            public PlayerUnlocksData playerUnlocksSaveData;
+            public BuildingsData buildingsSaveData;
         }
 
         public static string SaveFileName(int saveSlot)
@@ -30,6 +33,8 @@ namespace SaveSystem
         public static void HandleSaveData()
         {
             GameManager.Instance.PlayerProgression.Save(ref _saveData.playerProgressionSaveData);
+            GameManager.Instance.PlayerUnlocks.Save(ref _saveData.playerUnlocksSaveData);
+            GameManager.Instance.Buildings.Save(ref _saveData.buildingsSaveData);
         }
 
         public static void Load()
@@ -43,6 +48,8 @@ namespace SaveSystem
         public static void HandleLoadData()
         {
             GameManager.Instance.PlayerProgression.Load(_saveData.playerProgressionSaveData);
+            GameManager.Instance.PlayerUnlocks.Load(_saveData.playerUnlocksSaveData);
+            GameManager.Instance.Buildings.Load(_saveData.buildingsSaveData);
         }
         
         public static bool IsSaveExists(int saveSlot)

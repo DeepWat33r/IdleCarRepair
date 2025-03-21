@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Buildings.GasStation
+namespace Businesses.GasStation
 {
     public class GasStationManager : MonoBehaviour
     {
