@@ -15,6 +15,7 @@ namespace Cars
 
         public CarState currentState = CarState.OnRoad;
         public bool isNeedRepair = true;
+        public bool isNeedFuel = true;
         private Timer _waitTimer;
 
         

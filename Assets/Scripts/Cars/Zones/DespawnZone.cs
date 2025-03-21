@@ -11,6 +11,9 @@ namespace Cars.Zones
         {
             if (other.CompareTag(carTag))
             {
+                CarMovement carMovement = other.GetComponent<CarMovement>();
+                carMovement.isNeedRepair = true;
+                carMovement.isNeedFuel = true;
                 ObjectPool.Instance.ReturnToPool(carTag, other.gameObject);
             }
         }
