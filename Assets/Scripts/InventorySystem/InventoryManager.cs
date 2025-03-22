@@ -56,6 +56,15 @@ namespace InventorySystem
                 OnInventoryChanged?.Invoke();
             }
         }
+        
+        public bool FindItem(Item item)
+        {
+            InventoryItem invItem = inventoryItems.Find(i => i.item == item);
+            if (invItem is { quantity: > 0 })
+                return true;
+            return false;
+        }
+        
         #region Save/Load
         public void Save(ref InventoryData data)
         {

@@ -405,7 +405,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 31.000004}
-  m_SizeDelta: {x: 70, y: 20}
+  m_SizeDelta: {x: 80, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &47093953
 MonoBehaviour:
@@ -461,7 +461,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 17
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -3941,6 +3941,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1224423803}
+        m_TargetAssemblyTypeName: UI.CreateBuildingUI, Assembly-CSharp
+        m_MethodName: DisableRepairShopButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &604975967
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5256,71 +5268,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1814341355919726468, guid: 6994926cfe84c7446b2f2f7b916308f9, type: 3}
   m_PrefabInstance: {fileID: 851261366}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &854656121
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 854656123}
-  - component: {fileID: 854656122}
-  - component: {fileID: 854656124}
-  m_Layer: 0
-  m_Name: Player
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &854656122
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 854656121}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 58692b76245b3054bbd51466d0caeaf1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  level: 1
-  experience: 0
-  money: 1000
-  maxLevel: 5
-  expPerLevel: 0000000064000000fa000000f4010000e8030000
---- !u!4 &854656123
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 854656121}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.750324, y: 12.390646, z: -3.1280653}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &854656124
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 854656121}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90709789969d55247bd57961b2746f68, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  levelToUnlockGasStation: 3
-  levelToUnlockOilFilter: 2
-  levelToUnlockEngine: 3
 --- !u!1001 &866293819
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7611,6 +7558,7 @@ MonoBehaviour:
   buildGasStationUIButton: {fileID: 157405617}
   repairShopCostText: {fileID: 519952933}
   gasStationCostText: {fileID: 47093953}
+  canBuildColor: {r: 0.49411768, g: 0.6313726, b: 0.09019608, a: 1}
 --- !u!114 &1224423804
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12237,6 +12185,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1224423803}
+        m_TargetAssemblyTypeName: UI.CreateBuildingUI, Assembly-CSharp
+        m_MethodName: DisableGasStationButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1815758841
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14984,6 +14944,63 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 887943299985183082, guid: af4cca597fd9e01469c457eb17525ac1, type: 3}
   m_PrefabInstance: {fileID: 7923793018409796117}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8427190782286441041
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5618348531176727563, guid: 580613faeb865194698037d612b81edb, type: 3}
+      propertyPath: m_Name
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 8179167198226780014, guid: 580613faeb865194698037d612b81edb, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 8.750324
+      objectReference: {fileID: 0}
+    - target: {fileID: 8179167198226780014, guid: 580613faeb865194698037d612b81edb, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 12.390646
+      objectReference: {fileID: 0}
+    - target: {fileID: 8179167198226780014, guid: 580613faeb865194698037d612b81edb, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3.1280653
+      objectReference: {fileID: 0}
+    - target: {fileID: 8179167198226780014, guid: 580613faeb865194698037d612b81edb, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8179167198226780014, guid: 580613faeb865194698037d612b81edb, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8179167198226780014, guid: 580613faeb865194698037d612b81edb, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8179167198226780014, guid: 580613faeb865194698037d612b81edb, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8179167198226780014, guid: 580613faeb865194698037d612b81edb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8179167198226780014, guid: 580613faeb865194698037d612b81edb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8179167198226780014, guid: 580613faeb865194698037d612b81edb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 580613faeb865194698037d612b81edb, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -14994,7 +15011,7 @@ SceneRoots:
   - {fileID: 1477114008}
   - {fileID: 1224423802}
   - {fileID: 277397679}
-  - {fileID: 854656123}
+  - {fileID: 8427190782286441041}
   - {fileID: 511043318038257692}
   - {fileID: 1943536364966956920}
   - {fileID: 4294339307827018413}
